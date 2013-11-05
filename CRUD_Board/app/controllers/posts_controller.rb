@@ -32,11 +32,6 @@ class PostsController < ApplicationController
     end
   end
 
-  # GET /posts/1/edit
-  def edit
-    @post = Post.find(params[:id])
-  end
-
   # POST /posts
   # POST /posts.json
   def create
@@ -52,6 +47,12 @@ class PostsController < ApplicationController
       end
     end
   end
+
+  # GET /posts/1/edit
+  def edit
+    @post = Post.find(params[:id])
+  end
+
 
   # PUT /posts/1
   # PUT /posts/1.json
